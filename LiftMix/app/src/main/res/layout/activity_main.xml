@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/intro_text_view"
+        style="@style/IntroStyle"
+        android:background="@color/category_intro"
+        android:text="@string/intro_text_view"/>
+
+    <Button
+        android:id="@+id/upperbody"
+        style="@style/CategoryStyle"
+        android:background="@color/category_upperbody"
+        android:text="@string/category_upperbody"/>
+
+    <Button
+        android:id="@+id/lowerbody"
+        style="@style/CategoryStyle"
+        android:background="@color/category_lowerbody"
+        android:text="@string/category_lowerbody"/>
+
+    <Button
+        android:id="@+id/fullbody"
+        style="@style/CategoryStyle"
+        android:background="@color/category_fullbody"
+        android:text="@string/category_fullbody"/>
+
+</LinearLayout>

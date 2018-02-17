@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#8BC34A</color>
+    <color name="colorPrimaryDark">#5a9216</color>
+    <color name="colorAccent">#7c4dff</color>
+    <color name="category_intro">@android:color/white</color>
+    <color name="category_upperbody">#f44336</color>
+    <color name="category_lowerbody">#009688</color>
+    <color name="category_fullbody">#ff9800</color>
+
+</resources>

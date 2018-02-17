@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">LiftMix</string>
+    <string name="intro_text_view">What would you like to work on today?</string>
+    <string name="category_fullbody">Full Body</string>
+    <string name="category_upperbody">Upper Body</string>
+    <string name="category_lowerbody">Lower Body</string>
+    <string name="create_workout_button_view">Create Workout</string>
+    <string name="secondtier_intro">Select 5-7 exercises:</string>
+    <string name="confirm_intro">You chose:</string>
+</resources>
