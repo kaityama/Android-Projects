@@ -15,6 +15,7 @@ import java.util.ArrayList;
  */
 
 public class UpperBodyActivity extends AppCompatActivity {
+    ArrayList<Exercise> mSelected = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,24 +36,26 @@ public class UpperBodyActivity extends AppCompatActivity {
         ListView listView = findViewById(R.id.list);
         listView.setAdapter(itemsAdapter);
 
-        ArrayList<Exercise> selected = new ArrayList<>();
-
         for (int i = 0; i < exercises.size(); i++) {
-            CheckBox c = (CheckBox) listView.getChildAt(i);
+            CheckBox c = (CheckBox)listView.getChildAt(i);
             if (c.isChecked()) {
-                selected.add(exercises.get(i));
+                mSelected.add(exercises.get(i));
             }
         }
 
-        Button submitForm = findViewById(R.id.submit_exercises);
-        // Set a click listener on that View
-        submitForm.setOnClickListener(new View.OnClickListener() {
-            // The code in this method will be executed when the numbers View is clicked on.
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(UpperBodyActivity.this, ConfirmActivity.class);
-                startActivity(intent);
-            }
-        });
+//        Button submitForm = findViewById(R.id.submit_exercises);
+//        // Set a click listener on that View
+//        submitForm.setOnClickListener(new View.OnClickListener() {
+//            // The code in this method will be executed when the numbers View is clicked on.
+//            @Override
+//            public void onClick(View view) {
+//                Intent intent = new Intent(UpperBodyActivity.this, ConfirmActivity.class);
+//                startActivity(intent);
+//            }
+//        });
+    }
+
+    public ArrayList<Exercise> getSelected() {
+        return mSelected;
     }
 }

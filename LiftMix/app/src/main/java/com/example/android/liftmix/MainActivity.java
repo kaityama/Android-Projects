@@ -15,21 +15,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-//    }
 
-//    public void clickable(View View)
-//    {
-//        String button_text;
-//        button_text =((Button)View).getText().toString();
-//        if(button_text.equals("Upper Body")) {
-//            Intent i = new Intent(this, UpperBodyActivity.class);
-//            startActivity(i);
-//        }
-//    }
-
-        Button numbers = findViewById(R.id.upperbody);
+        Button b = findViewById(R.id.upperbody);
         // Set a click listener on that View
-        numbers.setOnClickListener(new View.OnClickListener() {
+        b.setOnClickListener(new View.OnClickListener() {
             // The code in this method will be executed when the numbers View is clicked on.
             @Override
             public void onClick(View view) {
